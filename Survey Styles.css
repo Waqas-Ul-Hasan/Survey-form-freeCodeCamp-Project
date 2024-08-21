@@ -1,0 +1,149 @@
+
+body {
+    background-image: url('https://images.pexels.com/photos/933964/pexels-photo-933964.jpeg?auto=compress&cs=tinysrgb&w=1200');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial;
+}
+
+body::after {
+  content: '';
+  position: fixed; /* Make sure the overlay covers the entire body */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(92, 69, 169, 0.9); /* 90% opacity black overlay */
+  z-index: -1; /* Keeps the overlay behind the content */
+}
+
+form {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 37%;
+    min-width: 300px;
+    height:fit-content;
+    background-color: rgba(27, 27, 50, 0.7); /* Use rgba for semi-transparent background */
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+    padding-top: 1.5%;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    border-radius: 5px;
+}
+
+
+  
+input {
+  width: 98%;
+  padding-right: 1%;
+  padding-left: 1%;
+  min-height: 2.2em;
+  background-color: white;
+  border-color: white;
+  border-radius: 3px;
+}
+
+textarea{
+  width: 98%;
+  padding-right: 1%;
+  padding-left: 1%;
+  min-height: 6.6em;
+  background-color: white;
+  border-color: white;
+  border-radius: 3px;
+}
+
+select {
+  width: 100%;
+  padding-right: 1%;
+  padding-left: 1%;
+  min-height: 2.5em;
+  background-color: white;
+  border-color: white;
+  border-radius: 3px;
+}
+
+input::placeholder {
+  font-size: 17px; /* Change the size to your desired value */
+}
+
+input[type="radio"]{
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="checkbox"]{
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+.heading {
+  margin-bottom: 10px;
+  font-size: larger;
+}
+
+
+h1 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  text-align: center;
+  color:rgb(244, 250, 255);
+}
+
+#description {
+  margin-top: -20px;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  color: rgb(244, 250, 255);
+  font-size: large;
+  font-style: italic;
+}
+
+.radio-label{
+  display: block;
+  margin: 10px;
+}
+
+.checkbox-label{
+  display: block;
+  margin: 10px;
+}
+
+#submit {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: #41a746; 
+
+}
+
+#submit:hover {
+  background-color: #45a049; 
+  color: #e0e0e0; 
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+  transform: scale(1.02); 
+}
+
+#submit:active{
+  background-color: #357b38; 
+  color: #d4d4d4; 
+  transform: scale(0.98); 
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
